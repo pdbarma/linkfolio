@@ -10,6 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
         link.addEventListener("click", function (event) {
             event.preventDefault();
             const id = this.id;
+            if (id === "portfolio") {
+                // Navigate to portfolio in the same tab
+                return;
+            }
+            event.preventDefault();
             if (links[id]) {
                 window.open(links[id], "_blank");
             }
