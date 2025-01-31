@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const links = {
+        portfolio: "https://pdbarma.github.io/314RSA",
         instagram: "https://www.instagram.com/314rsa",
-        portfolio: "https://pdbarma.github.io/314RSA/",
         linkedin: "https://www.linkedin.com/in/pirsa-debbarma",
         twitter: "https://x.com/314xrsa"
     };
@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const id = this.id;
             if (id === "portfolio") {
                 // Navigate to portfolio in the same tab
+                window.location.href = this.href;
                 return;
             }
             event.preventDefault();
