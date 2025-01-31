@@ -12,8 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const id = this.id;
             if (id === "portfolio") {
                 // Navigate to portfolio in the same tab
-                window.location.href = this.href;
-                return;
+                window.location.href = links[id];
             }
             event.preventDefault();
             if (links[id]) {
